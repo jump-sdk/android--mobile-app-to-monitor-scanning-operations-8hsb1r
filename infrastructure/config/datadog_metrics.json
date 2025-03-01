@@ -1,0 +1,62 @@
+{
+  "metrics": [
+    {
+      "id": "total_scans",
+      "name": "Total Scans",
+      "description": "Total number of ticket scans over the last 2 hours",
+      "query": "sum:ticket.scans.count{*}",
+      "time_range": {
+        "duration": 7200,
+        "unit": "seconds"
+      },
+      "display": {
+        "format": "number",
+        "precision": 0,
+        "size": "large"
+      },
+      "refresh_interval": 300,
+      "aggregation": "sum",
+      "default_value": 0
+    }
+  ],
+  "api_settings": {
+    "base_url": "https://api.datadoghq.com/",
+    "endpoint": "api/v1/query",
+    "method": "GET",
+    "timeout": 15,
+    "retries": 3,
+    "headers": [
+      {
+        "name": "DD-API-KEY",
+        "value_source": "BuildConfig.DATADOG_API_KEY"
+      },
+      {
+        "name": "DD-APPLICATION-KEY",
+        "value_source": "BuildConfig.DATADOG_APP_KEY"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ]
+  },
+  "cache_settings": {
+    "enabled": true,
+    "max_age": 600,
+    "storage_key": "scan_metrics_cache"
+  },
+  "error_handling": {
+    "default_retry_delay": 5000,
+    "max_retry_delay": 60000,
+    "use_exponential_backoff": true,
+    "show_last_successful_data": true
+  },
+  "display_settings": {
+    "title": "TOTAL SCANS",
+    "subtitle": "Last 2 Hours",
+    "update_format": "Updated: {time}",
+    "loading_text": "Loading Data...",
+    "error_text": "Unable to load scan data",
+    "offline_text": "Offline Mode"
+  }
+}
