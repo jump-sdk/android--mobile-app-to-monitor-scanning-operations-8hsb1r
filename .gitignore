@@ -1,0 +1,85 @@
+src/android/.gradle/
+src/android/build/
+src/android/app/build/
+src/android/app/release/
+src/android/app/debug/
+*.apk
+*.aab
+*.aar
+*.ap_
+
+# Android generated files
+src/android/bin/
+src/android/gen/
+src/android/out/
+*.dex
+*.class
+
+# IDE specific files
+.idea/
+*.iml
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# Local configuration files
+src/android/local.properties
+src/android/gradle.properties
+local.properties
+.env
+
+# Log files and captures
+*.log
+src/android/captures/
+src/android/app/captures/
+*.hprof
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# External native build folder
+src/android/.externalNativeBuild/
+src/android/.cxx/
+src/android/app/.cxx/
+
+# Sensitive data
+*.jks
+*.keystore
+src/android/app/google-services.json
+**/secrets.xml
+**/key.properties
+
+# Dependency directories
+node_modules/
+.gradle/
+
+# Cache files
+.gradle/
+.kotlin/
+.android/
+gradle-app/
+**/*.iml
+**/.gradle
+**/.idea/caches
+
+# Keep Gradle Wrapper
+!src/android/gradle/wrapper/gradle-wrapper.jar
+!src/android/gradle/wrapper/gradle-wrapper.properties
+
+# Test outputs
+report/
+src/android/app/coverage/
+*.exec
+*.ec
+
+# Generated documentation
+docs/generated/
+
+# Build config files with API keys
+src/android/app/src/main/java/com/jump/scanmonitor/BuildConfig.java
+
+# CI artifacts
+artifacts/
+*.zip
