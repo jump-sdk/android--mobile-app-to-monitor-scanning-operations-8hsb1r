@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application name -->
+    <string name="app_name">ScanMonitorApps</string>
+    
+    <!-- Dashboard labels -->
+    <string name="dashboard_title">Scan Monitor</string>
+    <string name="total_scans_label">TOTAL SCANS</string>
+    <string name="time_range">Last 2 Hours</string>
+    
+    <!-- Status indicators -->
+    <string name="status_connected">Connected</string>
+    <string name="status_offline">Offline Mode</string>
+    <string name="status_updated">Updated: %1$s</string>
+    <string name="status_cached">Using cached data</string>
+    <string name="status_stale">Data may be outdated</string>
+    <string name="cached_timestamp">Cached: %1$s ago</string>
+    <string name="live_data">Live Data</string>
+    
+    <!-- Actions -->
+    <string name="action_pull_refresh">Pull down to refresh</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_help">Help</string>
+    <string name="pull_to_retry">Pull down to retry</string>
+    
+    <!-- Error messages -->
+    <string name="error_retrieving_data">Error retrieving data</string>
+    <string name="error_load_data">Unable to load scan data</string>
+    <string name="error_authentication">Authentication error. Please check API credentials.</string>
+    <string name="error_suggestion">Check your network connection\nor Datadog API configuration</string>
+    
+    <!-- Loading state -->
+    <string name="loading_data">Loading Data…</string>
+    
+    <!-- Accessibility content descriptions -->
+    <string name="content_description_refresh">Refresh scan data</string>
+    <string name="content_description_status">Connection status</string>
+    <string name="content_description_error">Error icon</string>
+</resources>
