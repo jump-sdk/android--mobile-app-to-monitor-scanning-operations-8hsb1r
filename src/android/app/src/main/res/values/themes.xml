@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Theme definitions for ScanMonitorApps
+    Designed for high-contrast visibility in stadium environments with variable lighting conditions
+    Following Material Design guidelines for consistent, readable UI components
+-->
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.ScanMonitor" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        
+        <!-- System UI colors -->
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- Typography - Using Roboto font family with appropriate weights and sizes -->
+        <!-- Large metrics display value (48sp Bold) -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.ScanMonitor.Headline1</item>
+        <!-- Section titles (16sp Medium) -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ScanMonitor.Headline6</item>
+        <!-- Time range text (14sp Regular) -->
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.ScanMonitor.Subtitle1</item>
+        <!-- General body text (14sp Regular) -->
+        <item name="textAppearanceBody1">@style/TextAppearance.ScanMonitor.Body1</item>
+        <!-- Status text and timestamps (14sp Medium) -->
+        <item name="textAppearanceCaption">@style/TextAppearance.ScanMonitor.Caption</item>
+        
+        <!-- Shape appearance -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.ScanMonitor.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.ScanMonitor.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.ScanMonitor.LargeComponent</item>
+    </style>
+    
+    <!-- Typography styles -->
+    <style name="TextAppearance.ScanMonitor.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    
+    <style name="TextAppearance.ScanMonitor.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+    
+    <style name="TextAppearance.ScanMonitor.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+    
+    <style name="TextAppearance.ScanMonitor.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    
+    <style name="TextAppearance.ScanMonitor.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+    
+    <!-- Shape styles -->
+    <style name="ShapeAppearance.ScanMonitor.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.ScanMonitor.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.ScanMonitor.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+    
+    <!-- No Action Bar theme variant for full-screen experience -->
+    <style name="Theme.ScanMonitor.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <!-- Theme overlay for toolbar -->
+    <style name="Theme.ScanMonitor.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <!-- Ensure text and icons are visible on the primary color background -->
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    </style>
+    
+    <!-- Theme overlay for popups -->
+    <style name="Theme.ScanMonitor.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <!-- Ensure consistent styling for popups and dialogs -->
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+    </style>
+</resources>
