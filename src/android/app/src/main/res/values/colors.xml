@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Color resources for ScanMonitorApps following Material Design guidelines
+  Optimized for high contrast visibility in stadium environments with variable lighting conditions
+-->
+<resources>
+    <!-- Primary brand color - Blue (#1976D2) -->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorPrimaryVariant">#2196F3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    
+    <!-- Secondary brand color - Amber (#FFA000) -->
+    <color name="colorSecondary">#FFA000</color>
+    <color name="colorSecondaryVariant">#FFB300</color>
+    <color name="colorOnSecondary">#000000</color>
+    
+    <!-- Background and surface colors -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#F5F5F5</color>
+    <color name="colorOnBackground">#212121</color>
+    <color name="colorOnSurface">#212121</color>
+    
+    <!-- Error color -->
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+    
+    <!-- Text colors -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    
+    <!-- Status-specific background colors -->
+    <color name="colorOfflineBackground">#1AB00020</color> <!-- Error with 10% opacity -->
+    <color name="colorStaleBackground">#1AFFA000</color> <!-- Secondary with 10% opacity -->
+</resources>
