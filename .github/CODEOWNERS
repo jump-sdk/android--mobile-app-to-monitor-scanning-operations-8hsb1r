@@ -1,0 +1,37 @@
+# This file defines who is responsible for reviewing and approving changes to different parts of the codebase
+
+# Default owners for everything (fallback)
+* @jump/mobile-dev-leads
+
+# UI components
+src/android/app/src/main/java/com/jump/scanmonitor/ui/** @jump/ui-team
+
+# API integration
+src/android/app/src/main/java/com/jump/scanmonitor/service/api/** @jump/api-integration-team
+
+# Architecture components
+src/android/app/src/main/java/com/jump/scanmonitor/viewmodel/** @jump/architecture-team
+src/android/app/src/main/java/com/jump/scanmonitor/repository/** @jump/architecture-team
+src/android/app/src/main/java/com/jump/scanmonitor/model/** @jump/architecture-team
+src/android/app/src/main/java/com/jump/scanmonitor/di/** @jump/architecture-team
+
+# Storage and network components
+src/android/app/src/main/java/com/jump/scanmonitor/service/cache/** @jump/storage-team
+src/android/app/src/main/java/com/jump/scanmonitor/service/network/** @jump/network-team
+
+# Tests
+src/android/app/src/test/** @jump/qa-team @jump/mobile-dev-leads
+src/android/app/src/androidTest/** @jump/qa-team
+
+# Build configurations
+src/android/app/build.gradle.kts @jump/build-team
+
+# CI/CD workflows
+.github/workflows/** @jump/devops-team
+
+# Documentation
+docs/** @jump/documentation-team @jump/mobile-dev-leads
+
+# Infrastructure and scripts
+infrastructure/** @jump/devops-team
+scripts/** @jump/build-team @jump/devops-team
